@@ -1,0 +1,25 @@
+
+--main-font: "Roboto","Montserrat", Sans-serif;
+--text-color: #000000;
+
+
+
+
+
+
+.list{
+  list-style: none;
+}
+
+.title{
+    font-weight: 500;
+    font-style: var(--main-font);
+    color: var(--text-color);
+
+}
+
+.subtitle {
+    font-weight: 400;
+    font-style: var(--main-font);
+    color: var(--text-color);
+}
