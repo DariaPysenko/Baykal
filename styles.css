@@ -1,28 +1,46 @@
-:root{
-    --main-font: "Roboto","Montserrat", Sans-serif;
---text-color: #000000;
+:root {
+  --main-font: "Roboto", "Montserrat", Sans-serif;
+  --text-color: #000000;
+  --card-set-gap-right: 30px;
+  --card-set-gap-bottom: 50px;
 }
 
+.container {
+  width: 1200px;
+  height: 582px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-
-
-
-
-
-
-.list{
+.list {
   list-style: none;
 }
 
-.title{
-    font-weight: 500;
-    font-style: var(--main-font);
-    color: var(--text-color);
-
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-style: var(--main-font);
+  color: var(--text-color);
+  margin-bottom: 50px;
+  margin-top: 44px;
 }
 
 .subtitle {
-    font-weight: 400;
-    font-style: var(--main-font);
-    color: var(--text-color);
+  font-weight: 400;
+  font-style: var(--main-font);
+  color: var(--text-color);
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--card-set-gap-right));
+  margin-bottom: calc(-1 * var(--card-set-gap-bottom));
+}
+
+.card-set > .features-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: var(--card-set-gap-right);
+  margin-bottom: var(--card-set-gap-bottom);
 }
